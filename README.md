@@ -26,7 +26,7 @@ sudo apt-get update
 sudo apt-get install grafana
 ```
   
-### Start the Grafana server
+### 2. Start the Grafana server
 This starts the `grafana-server` process as the grafana user, which was created during the package installation.
   
 Start the server with systemd. 

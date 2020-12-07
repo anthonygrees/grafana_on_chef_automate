@@ -3,7 +3,7 @@ How to install Grafana on Chef Automate Elasticsearch backend.
   
 ### 1. Install the latest Grafana OSS release
   
-I used Ubuntu.  
+For this example, I have installed Grafana on Ubuntu.  Grafana will be installed on the Ubuntu Chef Automate VM.  This is for testing purposes only and shoul not be done on a Production machine.    
 ```bash
 sudo apt-get install -y apt-transport-https
 sudo apt-get install -y software-properties-common wget
@@ -41,4 +41,15 @@ Configure the Grafana server to start at boot:
 ```bash
 sudo systemctl enable grafana-server.service
 ```
+  
+Open Port 3000 on the Chef Automate machine so you can access Grafana UI.
+
+### 3. Login to Grafana
+  
+Go to the Grafana User Interface - `http://yourIPaddress:3000/login`.  
+  
+Login to the UI with:
+- User: `admin`  
+- Password: `admin`  
+  
   
